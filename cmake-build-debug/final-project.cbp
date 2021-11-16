@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="final-project"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;CMake Files\..\;CMake Files\..\..\;CMake Files\..\..\proj\;CMake Files\..\..\proj\cmake\;CMake Files\..\..\proj\cmake\modules\;CMake Files\..\..\lib\;CMake Files\..\..\lib\macosx\;CMake Files\..\..\lib\macosx\Debug\;CMake Files\..\..\cmake-build-debug\;CMake Files\..\..\cmake-build-debug\lib\;CMake Files\..\..\cmake-build-debug\lib\macosx\;CMake Files\..\..\cmake-build-debug\lib\macosx\Debug\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="/Users/josephkuang/Desktop/Cinder/my-projects/final-project-josephjkuang/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/josephkuang/Desktop/Cinder/my-projects/final-project-josephjkuang/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/josephkuang/Desktop/Cinder/my-projects/final-project-josephjkuang/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/josephkuang/Desktop/Cinder/my-projects/final-project-josephjkuang/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/josephkuang/Desktop/Cinder/my-projects/final-project-josephjkuang/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="golf-simulation-test">
+				<Option output="/Users/josephkuang/Desktop/Cinder/my-projects/final-project-josephjkuang/cmake-build-debug/Debug/golf-simulation-test/golf-simulation-test.app/Contents/MacOS/golf-simulation-test" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/josephkuang/Desktop/Cinder/my-projects/final-project-josephjkuang/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="0"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DFT2_BUILD_LIBRARY"/>
+					<Add option="-DFT_DEBUG_LEVEL_TRACE"/>
+					<Add directory="/Users/josephkuang/Desktop/Cinder/my-projects/final-project-josephjkuang/include"/>
+					<Add directory="/Users/josephkuang/Desktop/Cinder/my-projects/final-project-josephjkuang/cmake-build-debug/_deps/catch2-src/single_include"/>
+					<Add directory="/Users/josephkuang/Desktop/Cinder/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/bin/../include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/12.0.0/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/josephkuang/Desktop/Cinder/my-projects/final-project-josephjkuang/cmake-build-debug/Makefile&quot;  VERBOSE=1 golf-simulation-test"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/josephkuang/Desktop/Cinder/my-projects/final-project-josephjkuang/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/josephkuang/Desktop/Cinder/my-projects/final-project-josephjkuang/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/josephkuang/Desktop/Cinder/my-projects/final-project-josephjkuang/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="golf-simulation-test/fast">
+				<Option output="/Users/josephkuang/Desktop/Cinder/my-projects/final-project-josephjkuang/cmake-build-debug/Debug/golf-simulation-test/golf-simulation-test.app/Contents/MacOS/golf-simulation-test" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/josephkuang/Desktop/Cinder/my-projects/final-project-josephjkuang/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="0"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DFT2_BUILD_LIBRARY"/>
+					<Add option="-DFT_DEBUG_LEVEL_TRACE"/>
+					<Add directory="/Users/josephkuang/Desktop/Cinder/my-projects/final-project-josephjkuang/include"/>
+					<Add directory="/Users/josephkuang/Desktop/Cinder/my-projects/final-project-josephjkuang/cmake-build-debug/_deps/catch2-src/single_include"/>
+					<Add directory="/Users/josephkuang/Desktop/Cinder/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/bin/../include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/12.0.0/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/josephkuang/Desktop/Cinder/my-projects/final-project-josephjkuang/cmake-build-debug/Makefile&quot;  VERBOSE=1 golf-simulation-test/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/josephkuang/Desktop/Cinder/my-projects/final-project-josephjkuang/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/josephkuang/Desktop/Cinder/my-projects/final-project-josephjkuang/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/josephkuang/Desktop/Cinder/my-projects/final-project-josephjkuang/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="/Users/josephkuang/Desktop/Cinder/my-projects/final-project-josephjkuang/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/josephkuang/Desktop/Cinder/my-projects/final-project-josephjkuang/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/josephkuang/Desktop/Cinder/my-projects/final-project-josephjkuang/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/josephkuang/Desktop/Cinder/my-projects/final-project-josephjkuang/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/josephkuang/Desktop/Cinder/my-projects/final-project-josephjkuang/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="/Users/josephkuang/Desktop/Cinder/my-projects/final-project-josephjkuang/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/josephkuang/Desktop/Cinder/my-projects/final-project-josephjkuang/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/josephkuang/Desktop/Cinder/my-projects/final-project-josephjkuang/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/josephkuang/Desktop/Cinder/my-projects/final-project-josephjkuang/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/josephkuang/Desktop/Cinder/my-projects/final-project-josephjkuang/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="golf-simulation">
+				<Option output="/Users/josephkuang/Desktop/Cinder/my-projects/final-project-josephjkuang/cmake-build-debug/Debug/golf-simulation/golf-simulation.app/Contents/MacOS/golf-simulation" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/josephkuang/Desktop/Cinder/my-projects/final-project-josephjkuang/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="0"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DFT2_BUILD_LIBRARY"/>
+					<Add option="-DFT_DEBUG_LEVEL_TRACE"/>
+					<Add directory="/Users/josephkuang/Desktop/Cinder/my-projects/final-project-josephjkuang/include"/>
+					<Add directory="/Users/josephkuang/Desktop/Cinder/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/bin/../include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/12.0.0/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/josephkuang/Desktop/Cinder/my-projects/final-project-josephjkuang/cmake-build-debug/Makefile&quot;  VERBOSE=1 golf-simulation"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/josephkuang/Desktop/Cinder/my-projects/final-project-josephjkuang/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/josephkuang/Desktop/Cinder/my-projects/final-project-josephjkuang/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/josephkuang/Desktop/Cinder/my-projects/final-project-josephjkuang/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="golf-simulation/fast">
+				<Option output="/Users/josephkuang/Desktop/Cinder/my-projects/final-project-josephjkuang/cmake-build-debug/Debug/golf-simulation/golf-simulation.app/Contents/MacOS/golf-simulation" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/josephkuang/Desktop/Cinder/my-projects/final-project-josephjkuang/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="0"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DFT2_BUILD_LIBRARY"/>
+					<Add option="-DFT_DEBUG_LEVEL_TRACE"/>
+					<Add directory="/Users/josephkuang/Desktop/Cinder/my-projects/final-project-josephjkuang/include"/>
+					<Add directory="/Users/josephkuang/Desktop/Cinder/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/bin/../include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/12.0.0/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/josephkuang/Desktop/Cinder/my-projects/final-project-josephjkuang/cmake-build-debug/Makefile&quot;  VERBOSE=1 golf-simulation/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/josephkuang/Desktop/Cinder/my-projects/final-project-josephjkuang/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/josephkuang/Desktop/Cinder/my-projects/final-project-josephjkuang/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/josephkuang/Desktop/Cinder/my-projects/final-project-josephjkuang/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="/Users/josephkuang/Desktop/Cinder/my-projects/final-project-josephjkuang/apps/golf_main.cc">
+			<Option target="golf-simulation"/>
+		</Unit>
+		<Unit filename="/Users/josephkuang/Desktop/Cinder/my-projects/final-project-josephjkuang/src/ball.cc">
+			<Option target="golf-simulation-test"/>
+			<Option target="golf-simulation"/>
+		</Unit>
+		<Unit filename="/Users/josephkuang/Desktop/Cinder/my-projects/final-project-josephjkuang/src/course_reader.cc">
+			<Option target="golf-simulation-test"/>
+			<Option target="golf-simulation"/>
+		</Unit>
+		<Unit filename="/Users/josephkuang/Desktop/Cinder/my-projects/final-project-josephjkuang/src/golf_course.cc">
+			<Option target="golf-simulation-test"/>
+			<Option target="golf-simulation"/>
+		</Unit>
+		<Unit filename="/Users/josephkuang/Desktop/Cinder/my-projects/final-project-josephjkuang/src/golf_simulation_app.cc">
+			<Option target="golf-simulation-test"/>
+			<Option target="golf-simulation"/>
+		</Unit>
+		<Unit filename="/Users/josephkuang/Desktop/Cinder/my-projects/final-project-josephjkuang/tests/test_course_reader.cc">
+			<Option target="golf-simulation-test"/>
+		</Unit>
+		<Unit filename="/Users/josephkuang/Desktop/Cinder/my-projects/final-project-josephjkuang/tests/test_golf_course.cc">
+			<Option target="golf-simulation-test"/>
+		</Unit>
+		<Unit filename="/Users/josephkuang/Desktop/Cinder/my-projects/final-project-josephjkuang/tests/test_main.cc">
+			<Option target="golf-simulation-test"/>
+		</Unit>
+		<Unit filename="/Users/josephkuang/Desktop/Cinder/samples/data/CinderApp.icns">
+			<Option target="golf-simulation-test"/>
+			<Option target="golf-simulation"/>
+		</Unit>
+		<Unit filename="/Users/josephkuang/Desktop/Cinder/my-projects/final-project-josephjkuang/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+		<Unit filename="/Users/josephkuang/Desktop/Cinder/my-projects/final-project-josephjkuang/../../proj/cmake/configure.cmake">
+			<Option virtualFolder="CMake Files\..\..\proj\cmake\"/>
+		</Unit>
+		<Unit filename="/Users/josephkuang/Desktop/Cinder/my-projects/final-project-josephjkuang/../../proj/cmake/utilities.cmake">
+			<Option virtualFolder="CMake Files\..\..\proj\cmake\"/>
+		</Unit>
+		<Unit filename="/Users/josephkuang/Desktop/Cinder/my-projects/final-project-josephjkuang/../../proj/cmake/modules/cinderMakeApp.cmake">
+			<Option virtualFolder="CMake Files\..\..\proj\cmake\modules\"/>
+		</Unit>
+		<Unit filename="/Users/josephkuang/Desktop/Cinder/my-projects/final-project-josephjkuang/../../lib/macosx/Debug/cinderConfig.cmake">
+			<Option virtualFolder="CMake Files\..\..\lib\macosx\Debug\"/>
+		</Unit>
+		<Unit filename="/Users/josephkuang/Desktop/Cinder/my-projects/final-project-josephjkuang/../../cmake-build-debug/lib/macosx/Debug/cinderTargets.cmake">
+			<Option virtualFolder="CMake Files\..\..\cmake-build-debug\lib\macosx\Debug\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>

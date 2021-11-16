@@ -1,0 +1,151 @@
+
+// Code that was used to create the file that was loaded in for the course map.
+
+void GolfCourse::CreateBoundaries() {
+  // Initializing boundaries to be false at every pixel
+  vector<char> inner(kWindowHeight, '0');
+  course_map_ = vector<vector<char>>(kWindowWidth, inner);
+
+  // Setting Vertical Boundaries at edge of window
+  vector<char> vertical_boundary(kWindowHeight, '1');
+  course_map_[0] = vertical_boundary;
+  course_map_[kWindowWidth - 1] = vertical_boundary;
+
+  // Setting Horizontal Boundary at bottom of window
+  for (size_t i = 0; i < kWindowWidth; i++) {
+    course_map_[i][kWindowHeight - 1] = '1';
+  }
+
+  // Black Start Box
+  for (size_t i = 0; i <= 237; i++) {
+    course_map_[i][458] = '1';
+  }
+  for (size_t i = 458; i <= 700; i++) {
+    course_map_[237][i] = '1';
+  }
+
+  // Black Finish Box
+  for (size_t i = 1177; i < 1400; i++) {
+    course_map_[i][187] = '1';
+    course_map_[i][239] = '1';
+  }
+  for (size_t j = 187; j <= 239; j++) {
+    course_map_[1177][j] = '1';
+  }
+
+  // First Two Sand Boundaries
+  // Top of Left Bars
+  for (size_t i = 657; i <= 678; i++) {
+    course_map_[i][596] = '1';
+    course_map_[i][55] = '1';
+  }
+  // Top of Right Bars
+  for (size_t i = 782; i <= 803; i++) {
+    course_map_[i][596] = '1';
+    course_map_[i][280] = '1';
+  }
+  // Vertical Bars for Bottom Sand Boundary
+  for (size_t i = 596; i <= 700; i++) {
+    course_map_[657][i] = '1';
+    course_map_[678][i] = '1';
+    course_map_[782][i] = '1';
+    course_map_[803][i] = '1';
+  }
+  // Vertical Bar for Top Left Sand Boundary
+  for (size_t i = 55; i <= 385; i++) {
+    course_map_[657][i] = '1';
+    course_map_[678][i] = '1';
+  }
+  // Vertical Bar for Top Right Sand Boundary
+  for (size_t i = 280; i <= 385; i++) {
+    course_map_[782][i] = '1';
+    course_map_[803][i] = '1';
+  }
+  // Bottom of the Top Sand Boundary
+  for (size_t i = 657; i <= 803; i++) {
+    course_map_[i][385] = '1';
+  }
+
+  // Far Right Sand Barrier
+  // Left Top
+  for (size_t i = 1275; i <= 1296; i++) {
+    course_map_[i][596] = '1';
+  }
+  // Verticals
+  for (size_t i = 596; i <= 700; i++) {
+    course_map_[1275][i] = '1';
+    course_map_[1296][i] = '1';
+  }
+
+  // Middle Sand Barrier
+  // Left Top
+  for (size_t i = 974; i <= 995; i++) {
+    course_map_[i][426] = '1';
+  }
+  // Right Top
+  for (size_t i = 1099; i <= 1120; i++) {
+    course_map_[i][426] = '1';
+  }
+  // Bottom of Pit Horizontal
+  for (size_t i = 974; i <= 1120; i++) {
+    course_map_[i][530] = '1';
+  }
+  // Verticals
+  for (size_t i = 426; i <= 530; i++) {
+    course_map_[974][i] = '1';
+    course_map_[995][i] = '1';
+    course_map_[1099][i] = '1';
+    course_map_[1120][i] = '1';
+  }
+
+  // Sand
+  for (size_t i = 678; i < 782; i++) {
+    course_map_[i][288] = '3';
+    course_map_[i][602] = '3';
+  }
+  for (size_t i = 995; i < 1099; i++) {
+    course_map_[i][433] = '3';
+  }  for (size_t i = 1296; i < 1400; i++) {
+    course_map_[i][602] = '3';
+  }
+
+  // Water
+  for (size_t i = 237; i < 657; i++) {
+    course_map_[i][600] = '2';
+  }  for (size_t i = 803; i < 1275; i++) {
+    course_map_[i][600] = '2';
+  }
+
+  // Sticky Areas
+  for (size_t i = 74; i < 215; i++) {
+    course_map_[650][i] = '4';
+  }  for (size_t i = 1177; i < 1400; i++) {
+    course_map_[i][244] = '4';
+  }
+
+
+  // Final Hole
+  for (size_t i = 1211; i < 1225; i++) {
+    course_map_[i][187] = '5';
+    course_map_[i][186] = '5';
+  }
+  StoreData();
+}
+
+void GolfCourse::StoreData() const {
+  // Will Put This in Another Class
+  std::ofstream output_file("../../../../../../static/courses/course.txt");
+  if (output_file.is_open()) {
+    std::string output;
+    for (size_t x = 0; x < 1400; x++) {
+      for (size_t y = 0; y < 700; y++) {
+        output += course_map_[x][y];
+        output += " ";
+      }
+      output += "\n";
+    }
+    output_file << output << std::endl;
+  } else {
+    std::cerr << "Could not open output file" << std::endl;
+  }
+}

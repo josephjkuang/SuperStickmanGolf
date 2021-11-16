@@ -1,0 +1,4 @@
+/Users/josephkuang/Desktop/Cinder/my-projects/final-project-josephjkuang/cmake-build-debug/CMakeFiles/golf-simulation-test.dir
+/Users/josephkuang/Desktop/Cinder/my-projects/final-project-josephjkuang/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/Users/josephkuang/Desktop/Cinder/my-projects/final-project-josephjkuang/cmake-build-debug/CMakeFiles/edit_cache.dir
+/Users/josephkuang/Desktop/Cinder/my-projects/final-project-josephjkuang/cmake-build-debug/CMakeFiles/golf-simulation.dir

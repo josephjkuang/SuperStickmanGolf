@@ -1,0 +1,16 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/josephkuang/Desktop/Cinder/my-projects/final-project-josephjkuang/cmake-build-debug/_deps/catch2-src/projects/XCode/OCTest/OCTest/TestObj.h
+Foundation/Foundation.h
+-
+
+/Users/josephkuang/Desktop/Cinder/my-projects/final-project-josephjkuang/cmake-build-debug/_deps/catch2-src/projects/XCode/OCTest/OCTest/TestObj.m
+TestObj.h
+/Users/josephkuang/Desktop/Cinder/my-projects/final-project-josephjkuang/cmake-build-debug/_deps/catch2-src/projects/XCode/OCTest/OCTest/TestObj.h
+
